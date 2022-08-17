@@ -4,7 +4,7 @@ import chalk from "chalk";
 import { NextFunction, Request, Response } from "express";
 import CustomError from "../../utils/CustomError";
 
-const debug = Debug("robositos:server:middlewares/errors");
+const debug = Debug("items:server:middlewares/errors");
 
 export const notFoundError = (req: Request, res: Response) => {
   res.status(404).json({ error: "Endpoint not found" });
