@@ -1,10 +1,9 @@
-import connectDB from "./database";
 import "./loadEnvironment";
-
+import connectDB from "./database";
 import startServer from "./server/startServer";
 
 const port = +process.env.PORT || 4000;
-const mongoURL = process.env.MONGODB_URL;
+const mongoURL = process.env.MONGO_URI;
 
 (async () => {
   try {
