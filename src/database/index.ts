@@ -3,7 +3,7 @@ import Debug from "debug";
 import chalk from "chalk";
 import mongoose from "mongoose";
 
-const debug = Debug("robositos:database:index");
+const debug = Debug("items:database:index");
 
 const connectDB = (mongoUrl: string) =>
   new Promise((resolve, reject) => {
