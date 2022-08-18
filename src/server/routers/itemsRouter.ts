@@ -4,7 +4,7 @@ import authentication from "../middlewares/authentication";
 
 const itemsRouter = express.Router();
 
-itemsRouter.get("/", authentication, getAllItems);
+itemsRouter.get("/", getAllItems);
 itemsRouter.post("/create", createItem);
 
 export default itemsRouter;
