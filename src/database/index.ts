@@ -17,6 +17,8 @@ const connectDB = (mongoUrl: string) =>
         // eslint-disable-next-line no-underscore-dangle
         delete newDocument._id;
 
+        delete newDocument.password;
+
         return newDocument;
       },
     });
